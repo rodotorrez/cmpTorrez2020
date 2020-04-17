@@ -1,1 +1,101 @@
-<p>graficas1 works!</p>
+<div class="row">
+
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{graficos.grafico1.leyenda}} </h4>
+                
+                <app-grafica-dona [chartLabels]="graficos.grafico1.labels" [chartData]="graficos.grafico1.data"
+                    chartType="doughnut"></app-grafica-dona>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{graficos.grafico2.leyenda}} </h4>
+
+                <app-grafica-dona [chartLabels]="graficos.grafico2.labels" [chartData]="graficos.grafico2.data"
+                    chartType="doughnut"></app-grafica-dona>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{graficos.grafico3.leyenda}} </h4>
+
+                <app-grafica-dona [chartLabels]="graficos.grafico3.labels" [chartData]="graficos.grafico3.data"
+                    chartType="doughnut"></app-grafica-dona>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{graficos.grafico4.leyenda}} </h4>
+                <app-grafica-dona [chartLabels]="graficos.grafico4.labels" [chartData]="graficos.grafico4.data"
+                    chartType="doughnut"></app-grafica-dona>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Componente Dinamico -->
+
+
+<div class="row">
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">{{graficosBar.grafico1.leyenda}} </h4>
+                <app-grafica-bar 
+                [chartLabels]="graficosBar.grafico1.labels"
+                [chartType]="graficosBar.grafico1.type"
+                chartLegend="true"
+                [chartData]="graficosBar.grafico1.data"
+                ></app-grafica-bar>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">{{graficosBar.grafico2.leyenda}} </h4>
+
+                <app-grafica-bar 
+                [chartLabels]="graficosBar.grafico2.labels"
+                [chartType]="graficosBar.grafico2.type"
+                chartLegend="true"
+                [chartData]="graficosBar.grafico2.data"
+                ></app-grafica-bar>
+
+            </div>
+        </div>
+    </div>
+</div>
