@@ -20,6 +20,7 @@ import { ChartsModule } from 'ng2-charts';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
 import { GraficaBarComponent } from '../components/grafica-bar/grafica-bar.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { GraficaBarComponent } from '../components/grafica-bar/grafica-bar.compo
         Graficas1Component,
         IncrementadorComponent,
         GraficaDonaComponent,
-        GraficaBarComponent
+        GraficaBarComponent,
+        AccountSettingsComponent
     ],
     exports: [
         PagesComponent,
